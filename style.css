@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, pink, red, purple);
+  animation: bg 10s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+}
+
+@keyframes bg {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.container {
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+button {
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#yesBtn {
+  background: lime;
+}
+
+#noBtn {
+  background: black;
+  color: white;
+  position: absolute;
+}
+
+/* გულები */
+.heart {
+  position: fixed;
+  color: red;
+  font-size: 20px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
